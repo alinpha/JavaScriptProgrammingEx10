@@ -25,3 +25,13 @@ myBtn.setAttribute('class','btn');
 myBtn.innerHTML = 'Click Me';
 //myDiv.appendChild(myBtn);
 myDiv.insertBefore(myBtn,myPar);
+
+let p = document.CreateElement('p');
+myDiv.appendChild(p);
+myBtn.addEventListener('click', function() {
+	let r = Math.floor(Math.random() * 255);
+	let g = Math.floor(Math.random() * 255);
+	let b = Math.floor(Math.random() * 255);
+	myBtn.style.color = `rgb(${r},${g},${b})`;
+	p.innerHTML = `r: ${r} g: ${g} b: ${b}`;
+})
