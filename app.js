@@ -26,7 +26,7 @@ myBtn.innerHTML = 'Click Me';
 //myDiv.appendChild(myBtn);
 myDiv.insertBefore(myBtn,myPar);
 
-let p = document.CreateElement('p');
+let p = document.createElement('p');
 myDiv.appendChild(p);
 myBtn.addEventListener('click', function() {
 	let r = Math.floor(Math.random() * 255);
